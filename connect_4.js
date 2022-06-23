@@ -4,6 +4,18 @@
  * column until a player gets four-in-a-row (horiz, vert, or diag) or until
  * board fills (tie)
  */
+ document.addEventListener("DOMContentLoaded", function(){
+  const columnTop = document.querySelector('#column-top');
+  let lastRow = document.querySelector('#5-0');
+
+columnTop.addEventListener('click', function(e){
+  e.preventDefault();
+
+let pieceOne = document.createElement('div');
+  pieceOne.classList.add("playerOne")
+
+lastRow.appendChild(div);
+}
 
  var WIDTH = 7;
  var HEIGHT = 6;
@@ -131,4 +143,4 @@
  
  makeBoard();
  makeHtmlBoard();
- 
+ */
